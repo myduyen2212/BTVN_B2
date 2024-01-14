@@ -1,0 +1,230 @@
+/* ******************************************************************************* */
+/* general */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-style: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1.5fr;
+  grid-template-rows: 55px 100px 50px 1fr 0.75fr 0.75fr 200px 80px;
+  grid-template-areas:
+    "header header"
+    "sub-header sub-header"
+    "menu menu"
+    "promotion promotion"
+    "content discount"
+    "content updates"
+    "product product"
+    "footer footer";
+}
+
+.box {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 50px;
+  padding: 0px 10px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600px;
+  border-radius: 22px;
+  background-color: #de4886;
+}
+/* ******************************************************************************* */
+
+/* ******************************************************************************* */
+/* header */
+.header {
+  background-color: rgb(44, 44, 44);
+  grid-area: header;
+  font-size: 1rem;
+}
+
+.header .main-content {
+  /* background-color: rgb(203, 208, 65); */
+  width: 1200px;
+  min-width: calc(100% - 250px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .body {
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+
+.header .sign-in {
+  display: flex;
+}
+
+/* navigation */
+.header .nav {
+  margin-right: auto;
+}
+
+.header .nav ul {
+  display: flex;
+  list-style-type: none; /*Bỏ dấu chấm và đinh dạng lại thẻ ul*/
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav a {
+  position: relative;
+  color: #888590;
+  font-weight: 500;
+  /* background-color: #7bba6e; */
+  padding: 0px 15px;
+  padding-bottom: 8px;
+}
+
+.header .nav li.active a,
+.header .nav a:hover {
+  color: rgb(190, 46, 99);
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
+.header .nav li.active a::after {
+  position: absolute;
+  left: 16px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgb(190, 46, 99);
+}
+
+/* sign in */
+.header .sign-in {
+  display: flex;
+  margin-right: 30px;
+}
+
+.header .btn-sign-in,
+.header .btn-sign-up {
+  background-color: rgb(44, 44, 44);
+  padding: 0px 12px;
+  margin-right: 10px;
+}
+
+.header .sign-in input[type="text"] {
+  margin-right: 10px;
+  border-radius: 22px;
+  border: none;
+  background-color: #4b4853;
+}
+
+/* maintain the formatting of the placeholder even when the user enters text 
+into the input field */
+.header .sign-in input[type="text"]:not(:placeholder-shown) {
+  color: #888590;
+  font-weight: 550;
+  text-indent: 15px;
+}
+
+.header .sign-in input::placeholder {
+  color: #888590;
+  font-weight: 550;
+  text-indent: 15px; /* thụt vào so với input[type="text"] một khoảng 10px */
+}
+
+.header .sign-up .btn-sign-up {
+  position: relative;
+}
+
+.header .sign-up .btn-sign-up::before {
+  position: absolute;
+  right: 97px;
+  bottom: 2px;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 28px;
+  border-radius: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header .sign-up a:hover,
+.header .sign-in a:hover {
+  color: rgb(190, 46, 99);
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
+.header .sign-in .btn-go:hover {
+  color: #65636b;
+  text-shadow: 0.5px 0 0 currentColor;
+}
+/* ******************************************************************************* */
+
+/* .sub-header {
+  background-color: #a54bbc;
+  grid-area: sub-header;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.menu {
+  background-color: #d8c336;
+  grid-area: menu;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.promotion {
+  background-color: #50bcc0;
+  grid-area: promotion;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.content {
+  background-color: #5db79b;
+  grid-area: content;
+  margin-left: 2cm;
+}
+
+.discount {
+  background-color: #d44b64;
+  grid-area: discount;
+  margin-right: 2cm;
+}
+
+.updates {
+  background-color: #9cc725;
+  grid-area: updates;
+  margin-right: 2cm;
+}
+
+.product {
+  background-color: #ab588b;
+  grid-area: product;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.footer {
+  background-color: #64eaa3;
+  grid-area: footer;
+} */
