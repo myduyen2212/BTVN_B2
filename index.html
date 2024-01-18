@@ -3,27 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Bài tập buổi 2 (Bài 5)</title>
+    <title>Fashion Store</title>
   </head>
-  <body style="height: 10000px">
+  <body>
     <!-- grid layout -->
     <div class="container">
-      <!-- header -->
-      <header class="box header fixed">
+      <!-- 1. header -->
+      <header class="header">
         <div class="main-content">
           <div class="body">
             <!-- navigation -->
             <nav class="nav">
               <ul>
                 <li class="active">
-                  <a href="#!">Articles</a>
+                  <a href="#!" class="articles">Articles</a>
                 </li>
                 <li>
                   <a href="#!">Contact</a>
@@ -37,43 +125,454 @@
               </ul>
             </nav>
             <!-- sign in -->
-            <div class="sign-in">
-              <div class="action">
-                <a href="#!" class="btn btn-sign-in">Sign In</a>
+            <div class="right-content">
+              <div class="sign-in">
+                <div class="action">
+                  <a href="#!" class="btn btn-sign-in">Sign In</a>
+                </div>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  required
+                />
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="action">
+                  <a href="#!" class="btn btn-go">Go</a>
+                </div>
               </div>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Username"
-                required
-              />
-              <input
-                type="text"
-                id="password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-              <div class="action">
-                <a href="#!" class="btn btn-go">Go</a>
+              <!-- sign up -->
+              <div class="action sign-up">
+                <a href="#!" class="btn btn-sign-up">Sign Up</a>
               </div>
-            </div>
-            <!-- sign up -->
-            <div class="action sign-up">
-              <a href="#!" class="btn btn-sign-up">Sign Up</a>
             </div>
           </div>
         </div>
       </header>
-      <div class="box sub-header"></div>
-      <div class="box menu"></div>
-      <div class="box promotion"></div>
-      <div class="box content"></div>
-      <div class="box discount"></div>
-      <div class="box updates"></div>
-      <div class="box product"></div>
-      <div class="box footer"></div>
+      <!-- 2. sub-header -->
+      <div class="sub-header">
+        <div class="main-content">
+          <div class="body">
+            <!-- 2.1. sub-header-left -->
+            <div class="sub-header-left">
+              <img
+                src="./image/FSLogo-white.JPG"
+                alt="Fashion Store logo"
+                class="img-FSLogo"
+              />
+            </div>
+            <!-- 2.2. sub-header-right -->
+            <div class="sub-header-right">
+              <img
+                src="./image/register-poster.JPG"
+                alt="Register poster"
+                class="img-register-poster"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3. menu -->
+      <div class="menu">
+        <div class="main-content">
+          <div class="body">
+            <!-- navigation -->
+            <nav class="nav">
+              <ul>
+                <li class="home">
+                  <a href="#!">HOME</a>
+                </li>
+                <li class="men">
+                  <a href="#!">MEN</a>
+                </li>
+                <li class="active women">
+                  <a href="#!">WOMEN</a>
+                </li>
+                <li class="collection">
+                  <a href="#!">COLLECTION</a>
+                </li>
+                <li class="store-product">
+                  <a href="#!">STORE PRODUCTS</a>
+                </li>
+                <li class="latest-product">
+                  <a class="latest-product" href="#!">LATEST PRODUCT</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- search -->
+            <div class="search">
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Search"
+                required
+              />
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4. promotion -->
+      <div class="promotion">
+        <div class="main-content">
+          <div class="body">
+            <!-- 4.1. promotion-left -->
+            <div class="promotion-left">
+              <img
+                src="./image/summer-collection.JPG"
+                alt="Summer collection"
+                class="img-summer-collection"
+              />
+            </div>
+            <!-- 4.2. promotion-right -->
+            <div class="promotion-right">
+              <img
+                src="./image/winter-collection.JPG"
+                alt="Winter collection"
+                class="img-winter-collection"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 5. content -->
+      <div class="content">
+        <div class="main-content">
+          <div class="body">
+            <!-- 5.1. content-left -->
+            <div class="content-left">
+              <p class="latest-product-list-title">LATEST ARRIVALS</p>
+              <p class="latest-product-list-title-desc">
+                Check our all latest products in this section.
+              </p>
+              <hr />
+              <div class="latest-product-list">
+                <!-- latest-product-1 -->
+                <div class="latest-product latest-product-1">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+                <!-- latest-product-2 -->
+                <div class="latest-product latest-product-2">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+                <!-- latest-product-3 -->
+                <div class="latest-product latest-product-3">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+                <!-- latest-product-4 -->
+                <div class="latest-product latest-product-4">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+                <!-- latest-product-5 -->
+                <div class="latest-product latest-product-5">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+                <!-- latest-product-6 -->
+                <div class="latest-product latest-product-6">
+                  <div class="latest-product-top">
+                    <img
+                      src="./image/latest-product.JPG"
+                      alt="Latest product"
+                      class="img-latest-product"
+                    />
+                  </div>
+                  <p class="latest-product-name">
+                    Premium Denim Women's Hidden
+                  </p>
+                  <div class="latest-product-bottom">
+                    <p class="latest-product-price">$179.00</p>
+                    <div class="shopping-cart">
+                      <img
+                        src="./image/shopping-cart.png"
+                        alt="Shopping cart"
+                        class="img-shopping-cart"
+                      />
+                    </div>
+                    <p class="add-to-cart">Add to Cart</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 5.2. content-right -->
+            <div class="content-right">
+              <!-- 5.2.1. discount -->
+              <div class="discount">
+                <!-- 5.2.1.1. discount-top -->
+                <div class="discount-top">
+                  <img
+                    src="./image/exclusive-discount-women-wear.JPG"
+                    alt="Exclusive discount for women wear"
+                    class="img-exclusive-discount-women-wear"
+                  />
+                </div>
+                <!-- 5.2.1.2. discount-bottom -->
+                <div class="discount-bottom">
+                  <img
+                    src="./image/exclusive-discount-ladies-wear.JPG"
+                    alt="Exclusive discount for ladies wear"
+                    class="img-exclusive-discount-ladies-wear"
+                  />
+                </div>
+              </div>
+              <!-- 5.2.2. updates -->
+              <div class="updates">
+                <div class="twitter-updates-title">
+                  <p class="twitter-updates-title-desc">TWITTER UPDATES</p>
+                  <div class="twitter-logo">
+                    <img
+                      src="./image/twitter.png"
+                      alt="Twitter logo"
+                      class="img-twitter-logo"
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="twitter-update-1">
+                  <p class="tweet-content">
+                    <strong>@suniljoshi</strong> Looks like nice and decent
+                    design
+                  </p>
+                  <a href="#!" class="tweet-link">http://bit.ly/sun</a>
+                  <p class="tweet-time">About 1 hour ago via twitter feed</p>
+                </div>
+                <div class="twitter-update-2">
+                  <p class="tweet-content">
+                    <strong>@suniljoshi</strong> Looks like nice and decent
+                    design
+                  </p>
+                  <a href="#!" class="tweet-link">http://bit.ly/sun</a>
+                  <p class="tweet-time">About 1 hour ago via twitter feed</p>
+                </div>
+                <a href="#!" class="more-tweets">More Tweets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 6. other-product -->
+      <div class="other-product">
+        <div class="main-content">
+          <div class="body">
+            <!-- 6.1. other-product-top -->
+            <div class="other-product-top">
+              <p class="other-product-title">OTHER PRODUCTS</p>
+              <p class="other-product-title-desc">
+                Check our all latest products in this section.
+              </p>
+              <hr />
+            </div>
+            <!-- 6.2. other-product-bottom -->
+            <div class="other-product-bottom">
+              <button class="btn-arrow btn-previous-arrow">
+                <div class="icon-arrow">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </button>
+              <div class="other-product-list">
+                <!-- other-product-1 -->
+                <div class="other-product-item other-product-item-1">
+                  <div class="other-product-item-top">
+                    <img
+                      src="./image/other-product.JPG"
+                      alt="Other product"
+                      class="img-other-product-item"
+                    />
+                  </div>
+                  <p class="other-product-item-name">Denim Women's Hidden</p>
+                  <div class="other-product-item-bottom">
+                    <p class="other-product-item-price">$179.00</p>
+                    <a href="#!" class="buy-now">Buy Now</a>
+                  </div>
+                </div>
+                <!-- other-product-2 -->
+                <div class="other-product-item other-product-item-2">
+                  <div class="other-product-item-top">
+                    <img
+                      src="./image/other-product.JPG"
+                      alt="Other product"
+                      class="img-other-product-item"
+                    />
+                  </div>
+                  <p class="other-product-item-name">Denim Women's Hidden</p>
+                  <div class="other-product-item-bottom">
+                    <p class="other-product-item-price">$179.00</p>
+                    <a href="#!" class="buy-now">Buy Now</a>
+                  </div>
+                </div>
+                <!-- other-product-3 -->
+                <div class="other-product-item other-product-item-3">
+                  <div class="other-product-item-top">
+                    <img
+                      src="./image/other-product.JPG"
+                      alt="Other product"
+                      class="img-other-product-item"
+                    />
+                  </div>
+                  <p class="other-product-item-name">Denim Women's Hidden</p>
+                  <div class="other-product-item-bottom">
+                    <p class="other-product-item-price">$179.00</p>
+                    <a href="#!" class="buy-now">Buy Now</a>
+                  </div>
+                </div>
+                <!-- other-product-4 -->
+                <div class="other-product-item other-product-item-4">
+                  <div class="other-product-item-top">
+                    <img
+                      src="./image/other-product.JPG"
+                      alt="Other product"
+                      class="img-other-product-item"
+                    />
+                  </div>
+                  <p class="other-product-item-name">Denim Women's Hidden</p>
+                  <div class="other-product-item-bottom">
+                    <p class="other-product-item-price">$179.00</p>
+                    <a href="#!" class="buy-now">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-arrow btn-next-arrow">
+                <div class="icon-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7. footer -->
+      <div class="footer">
+        <div class="main-content">
+          <div class="body">
+            <!-- 7.1. footer-left -->
+            <div class="footer-left">
+              <p class="footer-summary">
+                Home | Mens | Women | Collections | Store Products | Affiliate
+                Products
+              </p>
+              <p class="footer-copyright">
+                Copyright &#169; 2011. All Rights Reserved by
+                <span style="color: white">Fashion Store.</span>
+              </p>
+            </div>
+            <!-- 7.2. footer-right -->
+            <div class="footer-right">
+              <img
+                src="./image/FSLogo-black.JPG"
+                alt="Fashion Store logo"
+                class="img-footer-right"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
