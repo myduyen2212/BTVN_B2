@@ -632,10 +632,18 @@ into the input field */
   margin-bottom: auto;
 }
 
+.other-product .btn-previous-arrow:hover {
+  background-color: #817995;
+}
+
 .other-product .btn-next-arrow {
   margin-left: 30px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.other-product .btn-next-arrow:hover {
+  background-color: #817995;
 }
 
 /* ===========other-product-list=========== */
